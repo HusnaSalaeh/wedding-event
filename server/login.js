@@ -14,6 +14,7 @@ login.use(cors({
     origin: ["http://localhost:5173"],
     methods: ["GET", "POST"],
     credentials: true
+    
 }));
 
 login.use(cookieParser());
@@ -22,7 +23,7 @@ login.use(bodyParser.urlencoded({ extended: true }));
 login.use(session(
     {
 
-        
+
         key: "userID",
         secret: "wedding-event",
         resave: false,
