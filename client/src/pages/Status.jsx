@@ -64,7 +64,7 @@ function Status() {
       width: 150,
       renderCell: (params) => (
         params.row.Title === "finished" ? (
-          <Button variant="contained" color="primary" component={Link} to={`/roomdetail/${params.row.id}`}>รีวิว</Button>
+          <Button variant="contained" color="primary" component={Link} to={`/review`}>รีวิว</Button>
         ) 
         : 
         (
